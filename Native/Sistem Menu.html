@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+    
+    label {
+      font-family: Georgia;
+      letter-spacing: 2px;
+      margin-right: 300px;
+    }
+    /* Navbar */
+    nav {
+      display: flex;
+      background-color: #185f5f;
+      justify-content: space-around;
+      height: 35px;
+      align-items: center;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Menu</title>
+</head>
+<body>
+  <nav>
+    <label>Dafit Trianto</label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-content">
+          <a href="#">Company</a>
+          <a href="#">Team</a>
+          <a href="#">Mission</a>
+        </div>
+      </li>
+      <li><a href="#">Services</a></li>
+      <li class="dropdown">
+        <a href="#">Projects</a>
+        <div class="dropdown-content">
+          <a href="#">Project 1</a>
+          <a href="#">Project 2</a>
+          <a href="#">Project 3</a>
+        </div>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
